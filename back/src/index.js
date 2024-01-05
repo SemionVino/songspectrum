@@ -2,9 +2,11 @@ import { Hono } from "hono";
 import fetch from "node-fetch";
 import { getLyrics, getSong } from "genius-lyrics-api";
 import mainRoutes from "./routers/mainRouter";
+import "./tools/db";
 const app = new Hono();
 
 mainRoutes(app);
+
 //-------------------------------------------------
 async function fetchArtistId(artistName) {
   const query = encodeURIComponent(artistName);

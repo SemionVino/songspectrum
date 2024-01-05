@@ -3,9 +3,10 @@
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "firebase": "^10.7.1",
     "genius-lyrics-api": "^3.2.0",
     "hono": "^3.11.4",
+    "mongoose": "^8.0.3",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
